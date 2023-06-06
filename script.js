@@ -1,20 +1,18 @@
 
 let text = document.getElementById("text");
 
-var i = 1;
+var i = 0;
 
-function minus() {
-    // i = -1;
+function minus(e) {
     text.innerHTML = --i;
 }
 
-function plus() {
-    // i = 1;
+function plus(e) {
     text.innerHTML = ++i;
 };
 
 
-function reload() {
+function reload(e) {
     i = 0
     text.innerHTML = "Counter";
 };
